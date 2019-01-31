@@ -1,0 +1,104 @@
+/* this is a mini-framework that uses for responsive design */
+/* and overrides some initial features of HTML elements in */
+/* order to provide a more user-friendly interface */
+* {
+    box-sizing: border-box;
+    font-family: iransans;
+    direction: rtl;
+}
+body {
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+}
+.container:before,
+.container:after {
+    display: table;
+    line-height: 0;
+    content: "";
+}
+.container:after {
+    clear: both;
+}
+.container-fluid {
+    width: 100%;
+}
+.container-fluid:before,
+.container-fluid:after {
+    display: table;
+    line-height: 0;
+    content: "";
+}
+.container-fluid:after {
+    clear: both;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+.ofst-1 {margin-right: 8.33%;}
+.ofst-2 {margin-right: 16.66%;}
+.ofst-3 {margin-right: 25%;}
+.ofst-4 {margin-right: 33.33%;}
+.ofst-5 {margin-right: 41.66%;}
+.ofst-6 {margin-right: 50%;}
+.ofst-7 {margin-right: 58.33%;}
+.ofst-8 {margin-right: 66.66%;}
+.ofst-9 {margin-right: 75%;}
+.ofst-10 {margin-right: 83.33%;}
+.ofst-11 {margin-right: 91.66%;}
+.ofst-12 {margin-right: 100%;}
+[class*="col-"] {
+    float: right;
+    font-weight: 300;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+video {
+    max-width: 100%;
+    height: auto;
+}
+.text-left {text-align: left;}
+.text-right {text-align: right;}
+.text-center {text-align: center;}
+.visible-only-mobile {display: none;}
+.btn-group {
+    position: relative;
+    display: inline-block;
+    *display: inline;
+    *margin-left: .3em;
+    font-size: 0;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+input:focus {outline: 0;}
+@media only screen and (max-width: 768px) {
+    [class*="col-"] {
+        width: 100%;
+    }
+    [class*="ofst-"] {
+        margin-right: 0;
+    }
+    .visible-only-mobile {display:inline;}
+}

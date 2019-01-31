@@ -1,0 +1,146 @@
+* {
+  word-wrap: break-word;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+#mycontainer {
+  min-height: 100%;
+  position: relative;
+}
+#body {
+  padding-bottom: 100px;
+}
+nav {
+  background-color: black;
+}
+nav ul {
+  list-style-type: none;
+  margin-top: 0;
+}
+nav ul li {
+  display: inline-block;
+  padding: 1%;
+  margin: 0.5%;
+
+}
+nav ul li a {
+  color: gray;
+}
+.inline-link {
+  color: blue;
+}
+.inline-link2 {
+  color: green;
+}
+.label {
+  font-size: 15px; 
+  color: white;
+  background-color: #53ad88;
+  padding: 0.5%;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+.widget {
+  font-weight: 500;
+  background-color: #e0e9e0;
+  padding: 0.4%;
+  border-radius: 4px;
+  border: 1px solid black;
+  margin: 20px;
+}
+.widget a, .post a {
+  color: black;
+}
+.c {
+  background-color: #f0e0e9
+}
+.post {
+  background-color: #f2f2f2;
+  width: 45%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 2%;
+  margin: 2.5%;
+}
+h2, h3, h4, h5, h6 {
+  border-bottom: 1px solid #ccc;
+}
+p {
+  text-indent: 1em;
+  text-align: justify;
+}
+.paper {
+  background-color: #f2f2f2;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  padding: 1%;
+  /* margin-bottom: 0.5%; */
+}
+h1 {
+  color: slategrey;
+}
+.zarinpal img{
+  display: block;
+  margin: auto;
+}
+#footer {
+  height: 100px;
+  color: gray;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  background-color: black;
+}
+#footer div {
+  padding: 1%;
+}
+#copyright {
+  color: orange;
+}
+/*** Works on common browsers ***/
+::selection {
+  background-color: lightgreen;
+}
+
+/*** Mozilla based browsers ***/
+::-moz-selection {
+  background-color: lightgreen;
+}
+
+/***For Other Browsers ***/
+::-o-selection {
+  background-color: lightgreen;
+}
+
+::-ms-selection {
+  background-color: lightgreen;
+}
+
+/*** For Webkit ***/
+::-webkit-selection {
+  background-color: lightgreen;
+}
+.readmore {
+  color: black;
+  border: 1px solid #f2f2f2;
+}
+.image {
+  width: 100%;
+}
+@media only screen and (max-width: 900px) {
+  .post {
+    width: 100%;
+  }
+
+}
+@media only screen and (max-width: 770px) {
+  #footer {
+    height: 250px;
+  }
+  #body {
+    padding-bottom: 250px;
+  }
+}
