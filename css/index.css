@@ -131,6 +131,10 @@ h1 {
 .image {
   width: 100%;
 }
+.active_tab {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
 @media only screen and (max-width: 900px) {
   .post {
     width: 100%;
