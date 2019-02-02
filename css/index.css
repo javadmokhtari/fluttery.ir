@@ -166,9 +166,9 @@ h1 {
 }
 @media only screen and (max-width: 770px) {
   #footer {
-    height: 400px;
+    height: 450px;
   }
   #body {
-    padding-bottom: 400px;
+    padding-bottom: 450px;
   }
 }
