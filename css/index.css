@@ -24,6 +24,7 @@ nav ul li {
   display: inline-block;
   padding: 1%;
   margin: 0.5%;
+  border: 1px solid black;
 
 }
 nav ul li a {
@@ -139,6 +140,12 @@ h1 {
   display: block;
   margin: auto;
 }
+#icon {
+  vertical-align: middle;
+}
+#flutter_official {
+  width: 50%;
+}
 @media only screen and (max-width: 900px) {
   .post {
     width: 100%;
@@ -150,6 +157,11 @@ h1 {
 @media only screen and (max-width: 850px) {
   nav ul li {
     display: block;
+  }
+  nav ul:first-child img{
+    display: block;
+    margin: auto;
+
   }
 }
 @media only screen and (max-width: 770px) {

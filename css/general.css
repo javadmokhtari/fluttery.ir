@@ -1,6 +1,9 @@
 /* this is a mini-framework that uses for responsive design */
 /* and overrides some initial features of HTML elements in */
 /* order to provide a more user-friendly interface */
+/* Last update: 2/2/2019 */
+/* Last Update: Added image-center class */
+
 * {
     box-sizing: border-box;
     font-family: iransans;
@@ -93,6 +96,10 @@ video {
     vertical-align: middle;
 }
 input:focus {outline: 0;}
+.image-center {
+    display: block;
+    margin: auto;
+}
 @media only screen and (max-width: 768px) {
     [class*="col-"] {
         width: 100%;
