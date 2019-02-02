@@ -11,7 +11,7 @@ html, body {
   position: relative;
 }
 #body {
-  padding-bottom: 100px;
+  padding-bottom: 230px;
 }
 nav {
   background-color: black;
@@ -88,7 +88,7 @@ h1 {
   margin: auto;
 }
 #footer {
-  height: 100px;
+  height: 230px;
   color: gray;
   position: absolute;
   width: 100%;
@@ -135,6 +135,10 @@ h1 {
   border: 1px solid #ccc;
   border-radius: 5px;
 }
+#logo {
+  display: block;
+  margin: auto;
+}
 @media only screen and (max-width: 900px) {
   .post {
     width: 100%;
@@ -150,9 +154,9 @@ h1 {
 }
 @media only screen and (max-width: 770px) {
   #footer {
-    height: 250px;
+    height: 400px;
   }
   #body {
-    padding-bottom: 250px;
+    padding-bottom: 400px;
   }
 }
