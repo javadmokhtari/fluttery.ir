@@ -160,6 +160,9 @@ h1 {
   nav ul li {
     display: block;
   }
+  .active_tab {
+    box-shadow: 0 0;
+  }
   nav ul:first-child img{
     display: block;
     margin: auto;
