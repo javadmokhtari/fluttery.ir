@@ -14,7 +14,7 @@ html, body {
   padding-bottom: 230px;
 }
 nav {
-  background-color: black;
+  background-image: linear-gradient(to right, #95ecff , #000000);
 }
 nav ul {
   list-style-type: none;
@@ -24,7 +24,8 @@ nav ul li {
   display: inline-block;
   padding: 1%;
   margin: 0.5%;
-  border: 1px solid black;
+  border: 1px solid;
+  border-color: transparent;
 
 }
 nav ul li a {
@@ -135,6 +136,7 @@ h1 {
 .active_tab {
   border: 1px solid #ccc;
   border-radius: 5px;
+  box-shadow: 2px 4px;
 }
 #logo {
   display: block;
