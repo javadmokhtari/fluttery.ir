@@ -100,6 +100,11 @@ input:focus {outline: 0;}
     display: block;
     margin: auto;
 }
+nav {
+    font-size: 13px;
+    font-weight: 500;
+}
+
 @media only screen and (max-width: 768px) {
     [class*="col-"] {
         width: 100%;
