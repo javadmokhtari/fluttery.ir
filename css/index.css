@@ -70,3 +70,31 @@ h2 {
 .fab1, .fas1 {
   font-size: 20px;
 }
+.footer h2 {
+  border: none;
+}
+.footer {
+  padding: 0 3%;
+  background-color: #e2dddd;
+}
+.copyright {
+  width: 22.5%;
+  margin: 0 3%;
+}
+.contact {
+  width: 37.56%;
+  margin: 0 1.1%;
+}
+.donate {
+  width: 20%;
+  margin: 0 3.3%;
+}
+#logo {
+  width: 30%;
+}
+@media only screen and (max-width: 600px) {
+  .copyright, .contact, .donate {
+    width: 100%;
+    margin: 1% 0;
+  }
+}
