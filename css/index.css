@@ -93,12 +93,6 @@ h2 {
 #logo {
   width: 30%;
 }
-@media only screen and (max-width: 600px) {
-  .copyright, .contact, .donate {
-    width: 100%;
-    margin: 1% 0;
-  }
-}
 .github-container p {
   display: inline-block;
   visibility: hidden;
@@ -124,4 +118,13 @@ h2 {
 }
 .telegram-container:hover #ttt{
   visibility: visible;
+}
+.main-view {
+  height: 100vh;
+}
+@media only screen and (max-width: 600px) {
+  .copyright, .contact, .donate {
+    width: 100%;
+    margin: 1% 0;
+  }
 }
