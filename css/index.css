@@ -99,3 +99,29 @@ h2 {
     margin: 1% 0;
   }
 }
+.github-container p {
+  display: inline-block;
+  visibility: hidden;
+  padding: 5px;
+  color: purple;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  transition: .3s visiblity ease-in-out;
+  background-color: #ccc;
+}
+.github-container:hover #gtt{
+  visibility: visible;
+}
+.telegram-container p {
+  display: inline-block;
+  visibility: hidden;
+  padding: 5px;
+  color: green;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  transition: .3s visiblity ease-in-out;
+  background-color: #ccc;
+}
+.telegram-container:hover #ttt{
+  visibility: visible;
+}
