@@ -152,7 +152,7 @@ h2 {
 .telegram-container:hover #ttt{
   visibility: visible;
 }
-.main-view {
+.main-view .row {
   height: 100vh;
 }
 #footer-note {
