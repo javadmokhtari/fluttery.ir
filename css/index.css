@@ -40,8 +40,12 @@ h2 {
   display: block;
   margin: auto;
 }
-#post a::before, #news a::before {
-  content: "--> "
+#post, #news {
+  padding: 10px 20px 30px 10px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+#post h2, #news h2 {
+  text-align: center;
 }
 #post a:hover, #news a:hover {
   color: blue;
@@ -51,8 +55,34 @@ h2 {
   color: #99AEBB;
   font-size: 15px;
 }
-#post a:last-child, #news a:last-child {
-  color: #7890DA;
+#post a:last-child {
+  margin-top: 20% !important;
+  color: #f4f4f4;
+  background-color: #49a049;
+  text-align: center;
+  border: none;
+  border-radius: 45px;
+  padding: 5px 0px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+#post a:last-child:hover {
+  background-color: #008956;
+}
+#news a:last-child:hover {
+  background-color: #b54747;
+}
+#news a:last-child {
+  margin-top: 20% !important;
+  color: #f4f4f4;
+  background-color: #A2356C;
+  text-align: center;
+  border: none;
+  border-radius: 45px;
+  padding: 5px 0px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+#post a:not(:last-child)::before, #news a:not(:last-child)::before {
+  content: "✔ ";
 }
 .fa-github, .fa-telegram, .fa-envelope {
   font-size: 35px;
@@ -78,6 +108,7 @@ h2 {
 }
 .footer {
   background-color: #e2dddd;
+  margin-top: 200px;
 }
 .copyright {
   width: 22.5%;
@@ -122,7 +153,7 @@ h2 {
   visibility: visible;
 }
 .main-view {
-  height: 91.3vh;
+  height: 100vh;
 }
 #footer-note {
   width: 100%;
@@ -134,7 +165,7 @@ h2 {
   margin:auto;
 }
 #zarinpal img {
-  width: 80px;
+  width: 60px;
   display: block;
   margin: auto;
 }
@@ -160,12 +191,19 @@ h2 {
   margin: auto;
   text-align: center;
 }
-@media only screen and (max-width: 600px) {
-  .copyright, .contact, .donate {
+#tglink {
+  color: black;
+}
+@media only screen and (max-width: 850px) {
+  .copyright, .contact, .donate, #post, #news {
     width: 100%;
     margin: 1% 0;
   }
+  #post {
+    margin-bottom: 30px;
+  }
   .footer {
     padding: 5%;
+    margin-top: 300px;
   }
 }
