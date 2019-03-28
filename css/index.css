@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Lalezar;
+  src: url('../fonts/ttf/Lalezar-Regular.ttf') format("truetype");
+  font-weight: bold;
+}
 body {
   background-color: #f4f4f4;
 }
@@ -10,7 +15,7 @@ nav ul {
 }
 nav ul li {
   display: inline-block;
-  padding: 8px 20px;
+  padding: 20px 20px;
 }
 nav ul li a {
   color: inherit;
@@ -43,6 +48,9 @@ h2 {
 #post a::before, #news a::before {
   content: "--> "
 }
+#post a:hover, #news a:hover {
+  color: blue;
+}
 #post a, #news a {
   display: block;
   color: #99AEBB;
@@ -74,7 +82,6 @@ h2 {
   border: none;
 }
 .footer {
-  padding: 0 3%;
   background-color: #e2dddd;
 }
 .copyright {
@@ -120,11 +127,50 @@ h2 {
   visibility: visible;
 }
 .main-view {
-  height: 100vh;
+  height: 91.3vh;
+}
+#footer-note {
+  width: 100%;
+  padding: 1%;
+  color: #ccc;
+  background-color: #354A54;
+}
+#zarinpal {
+  margin:auto;
+}
+#zarinpal img {
+  width: 80px;
+  display: block;
+  margin: auto;
+}
+#tutorial_button {
+  background-color: yellow;
+  padding: 10px 30px;
+  color: black;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+#tutorial_button:hover {
+  background-color: #2EE59D;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+.tutorial_section {
+  padding: 30px 0;
+}
+#ghlink {
+  display: block;
+  margin: auto;
+  text-align: center;
 }
 @media only screen and (max-width: 600px) {
   .copyright, .contact, .donate {
     width: 100%;
     margin: 1% 0;
+  }
+  .footer {
+    padding: 5%;
   }
 }
