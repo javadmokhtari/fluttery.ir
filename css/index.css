@@ -185,6 +185,7 @@ h2 {
 }
 .tutorial_section {
   padding: 30px 0;
+  background-color: rebeccapurple;
 }
 #ghlink {
   display: block;
