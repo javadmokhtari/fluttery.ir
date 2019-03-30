@@ -108,7 +108,7 @@ h2 {
 }
 .footer {
   background-color: #e2dddd;
-  margin-top: 200px;
+  /* margin-top: 200px; */
 }
 .copyright {
   width: 22.5%;
@@ -153,7 +153,11 @@ h2 {
   visibility: visible;
 }
 .main-view .row {
+  height: 81vh;
+}
+.section_2 {
   height: 100vh;
+  background-color: #ffff0091;
 }
 #footer-note {
   width: 100%;
@@ -185,7 +189,13 @@ h2 {
 }
 .tutorial_section {
   padding: 30px 0;
-  background-color: rebeccapurple;
+  background-color: darkslategray;
+  color: #eee;
+}
+
+.tutorial_section h1 {
+  color: #eee;
+  padding: 10px;
 }
 #ghlink {
   display: block;
@@ -194,6 +204,78 @@ h2 {
 }
 #tglink {
   color: black;
+}
+.wave-box {
+  width: 100%;
+  height: 300px;
+  border-radius: 5px;
+  box-shadow: 0 2px 30px rgba(black, .2);
+  background: lighten(#f0f4c3, 10%);
+  position: relative;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+}
+
+.wave {
+  opacity: .4;
+  position: absolute;
+  top: 3%;
+  left: 50%;
+  background: #0af;
+  width: 500px;
+  height: 500px;
+  margin-left: -250px;
+  margin-top: -250px;
+  transform-origin: 50% 48%;
+  border-radius: 43%;
+  animation: drift 3000ms infinite linear;
+}
+
+.wave.-three {
+  animation: drift 5000ms infinite linear;
+}
+
+.wave.-two {
+  animation: drift 7000ms infinite linear;
+  opacity: .1;
+  background: yellow;
+}
+
+.wave-box:after {
+  content: '';
+  display: block;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(#e8a, 1), rgba(#def, 0) 80%, rgba(white, .5));
+  z-index: 11;
+  transform: translate3d(0, 0, 0);
+}
+
+.title {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  line-height: 300px;
+  text-align: center;
+  transform: translate3d(0, 0, 0);
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  text-shadow: 0 1px 0 rgba(black, .1);
+  text-indent: .3em;
+  margin-top: -5%;
+}
+@keyframes drift {
+  from { transform: rotate(0deg); }
+  from { transform: rotate(360deg); }
+}
+#footer-section {
+  border-top: 2px solid #aaa;
 }
 @media only screen and (max-width: 850px) {
   .copyright, .contact, .donate, #post, #news {
@@ -205,6 +287,6 @@ h2 {
   }
   .footer {
     padding: 5%;
-    margin-top: 100px;
+    /* margin-top: 100px; */
   }
 }
