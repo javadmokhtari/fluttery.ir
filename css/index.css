@@ -173,6 +173,10 @@ h2 {
   display: block;
   margin: auto;
 }
+#zarinpal + p a {
+  color: red;
+  font-weight: 600;
+}
 #tutorial_button {
   background-color: yellow;
   padding: 10px 30px;
