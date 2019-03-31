@@ -83,6 +83,7 @@ h2 {
 }
 #post a:not(:last-child)::before, #news a:not(:last-child)::before {
   content: "✔ ";
+  color: goldenrod;
 }
 .fa-github, .fa-telegram, .fa-envelope {
   font-size: 35px;
