@@ -288,6 +288,9 @@ h2 {
   border-top: 2px solid #aaa;
 }
 @media only screen and (max-width: 850px) {
+  .tutorial_section {
+    text-shadow: none;
+  }
   .copyright, .contact, .donate, #post, #news {
     width: 100%;
     margin: 1% 0;
