@@ -198,6 +198,7 @@ h2 {
   background-color: darkslategray;
   color: #eee;  
   border-bottom: 5px solid rgb(96, 201, 191);
+  text-shadow: 2px 2px #333;
 }
 .tutorial_section p {
   color: #dc9f45;
