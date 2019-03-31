@@ -193,11 +193,15 @@ h2 {
   transform: translateY(-7px);
 }
 .tutorial_section {
-  padding: 30px 0;
+  height: 50vh;
+  padding: 90px 30px 0px 0px;
   background-color: darkslategray;
-  color: #eee;
+  color: #eee;  
+  border-bottom: 5px solid rgb(96, 201, 191);
 }
-
+.tutorial_section p {
+  color: #dc9f45;
+}
 .tutorial_section h1 {
   color: #eee;
   padding: 10px;
