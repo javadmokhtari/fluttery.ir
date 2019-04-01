@@ -85,4 +85,7 @@ pre {
     .prev_section {
         margin-bottom: 10px;
     }
+    .paper #main_header a {
+        font-size: 70%;
+    }
 }
