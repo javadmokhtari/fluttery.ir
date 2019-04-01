@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-137223411-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-137223411-1');
+</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- SEO Section -->
+  <!-- Complete seo for tutorial -->
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="author" content="جواد مختاری کوشیار">
+  <link rel="canonical" href="">
+  <meta name="Robots" content="index, follow">
+
+  <link rel="shortcut icon" href="../img/logo.png">
+  <link rel="stylesheet" href="../css/fontiran.css">
+  <link rel="stylesheet" href="../css/general.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="tutorial.css">
+  <link rel="stylesheet" href="prism.css">
+
+  <!-- Complete title for tutorial -->
+  <title>دوره آموزشی فلاتر | قسمت دوم</title>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="http://fluttery.ir">خانه</a></li>
+      <li><a href="http://fluttery.ir/posts">مقالات</a></li>
+      <li><a href="http://fluttery.ir/news">اخبار</a></li>
+      <li><a href="http://fluttery.ir/tutorial">دوره آموزش فلاتر</a></li>
+      <li><a href="#footer-section">دونیت</a></li>
+      <li><a href="#footer-section">درباره ما</a></li>
+      <li><a href="#footer-section">ارتباط با ما</a></li>
+    </ul>
+  </nav>
+
+  <div class="container paper">
+    <div class="row">
+      <div class="col-12">
+          <h1 id="main_header"><a href="">دوره آموزش فلاتری <span>22</span></a> آموزش نصب فلاتر در ویندوز</h1>
+          <h2>مقدمه</h2>
+          <p>
+            فعال کردن گزینه <b>KAZEM </b>Developer options و USB debugging بر روی موبایل خود. برای چگونگی فعال کردن می توانید به لینک تنظیمات توسعه دهندگان مراجعه کنید.
+      نصب Google USB Driver (فقط برای سیستم عامل ویندوز )
+      <a href="">HOOSHANG</a>
+      موبایل خود را با استفاده از کابل USB به کامپیوتر متصل کنید. در صورت درخواست اتصال از موبایل، کامپیوتر خود را می بایست مجاز به دسترسی به موبایل خود کنید.
+      در محیط اجرای فرمان (CMD) دستور  flutter devices را وارد کنید تا بررسی کنید چه موبایل هایی به کامپیوتر متصل شده است. اگر نام کامل موبایل خود را مشاهده کردید بیانگر این است که مشکلی نیست و مراحل خوب پیش رفته.
+      به طور پیش فرض، فلاتر از adb که در SDK Android قرار دارد استفاده می کند. اگر تمایل به اجرای SDK دیگری هستید می توانید یک متغییر محیطی به نام ANDROID_HOME بر روی دایرکتوری نصب فلاتر فعال کنید.
+      
+      پیکر بندی Android Emulator
+      در مرحله قبل چگونگی اجرا و تست اپ فلاتر بر روی موبایل خود را فرا گرفتیم. حال در این بخشی می خواهیم شرح دهیم چگونه می توانیم اپ خود را بر روی Emulator اجرا کنیم. مراحل زیر را دنبال کنید:
+      
+      اطمینان از فعال بودنVM acceleration بر روی کامپیوتر .
+      از مسیر Android Studio>Tools>Android>AVD Manager گزینه Create Virtual Device را انتخاب کنید. (زیر منو Android تنها زمانی فعال است که در نرم افزار یک پروژه آندروید باز شده است.)
+      انتخاب دستگاه هدف و زدن گزینه Next.
+      یکی از گزینه های نسخه شبیه سازی اندروید که مد نظرتان هست را انتخاب کنید و گزینه Next را بزنید. .پیشنهاد می شود یکی از بسته های x86 یا x86_64 را انتخاب کنید.
+      برای شبیه سازی عملکرد سخت افزاری, گزینه Hardware - GLES 2.0 را انتخاب کنید تا hardware acceleration (افزایش سرعت سخت افزار) فعال شود.
+      بررسی کنید که پیکربندی صحیح انجام شده، و در نهایت گزینه Finish را انتخاب کنید.
+      
+      برای مطالعه جزییات بیشتر , مدیریت دستگاه های مجازی را بخوانید.
+      
+      
+      در بخش Android Virtual Device Manager, گزینه Run در نوار ابزار را انتخاب کنید. مشاهده می کنید که شبیه ساز شروع به کار می کند و کادر پیش فرض را برای سیستم عامل و دستگاه انتخابی شما نمایش می دهد.
+          </p>
+<pre class="line-numbers">
+  <code class="language-dart">class _MyHomePageState extends State<MyHomePage> {
+      @override
+      Widget build(BuildContext context) {
+        var card = new SizedBox(
+          height: 210.0,
+          child: new Card(
+    child: new Column(
+      children: [
+        new ListTile(
+          title: new Text('1625 Main Street',
+      style: new TextStyle(fontWeight: FontWeight.w500)),
+          subtitle: new Text('My City, CA 99984'),
+          leading: new Icon(
+            Icons.restaurant_menu,
+            color: Colors.blue[500],
+          ),
+        ),
+</code>
+</pre>
+          <h2>بیشتر بخوانید</h2>
+          <p>فعال کردن گزینه Developer options و USB debugging بر روی موبایل خود. برای چگونگی فعال کردن می توانید به لینک تنظیمات توسعه دهندگان مراجعه کنید.
+              نصب Google USB Driver (فقط برای سیستم عامل ویندوز )
+              موبایل خود را با استفاده از کابل USB به کامپیوتر متصل کنید. در صورت درخواست اتصال از موبایل، کامپیوتر خود را می بایست مجاز به دسترسی به موبایل خود کنید.
+              در محیط اجرای فرمان (CMD) دستور  flutter devices را وارد کنید تا بررسی کنید چه موبایل هایی به کامپیوتر متصل شده است. اگر نام کامل موبایل خود را مشاهده کردید بیانگر این است که مشکلی نیست و مراحل خوب پیش رفته.
+              به طور پیش فرض، فلاتر از adb که در SDK Android قرار دارد استفاده می کند. اگر تمایل به اجرای SDK دیگری هستید می توانید یک متغییر محیطی به نام ANDROID_HOME بر روی دایرکتوری نصب فلاتر فعال کنید.
+              
+              پیکر بندی Android Emulator
+              در مرحله قبل چگونگی اجرا و تست اپ فلاتر بر روی موبایل خود را فرا گرفتیم. حال در این بخشی می خواهیم شرح دهیم چگونه می توانیم اپ خود را بر روی Emulator اجرا کنیم. مراحل زیر را دنبال کنید:
+              
+              اطمینان از فعال بودنVM acceleration بر روی کامپیوتر .
+              از مسیر Android Studio>Tools>Android>AVD Manager گزینه Create Virtual Device را انتخاب کنید. (زیر منو Android تنها زمانی فعال است که در نرم افزار یک پروژه آندروید باز شده است.)
+              انتخاب دستگاه هدف و زدن گزینه Next.
+              یکی از گزینه های نسخه شبیه سازی اندروید که مد نظرتان هست را انتخاب کنید و گزینه Next را بزنید. .پیشنهاد می شود یکی از بسته های x86 یا x86_64 را انتخاب کنید.
+              برای شبیه سازی عملکرد سخت افزاری, گزینه Hardware - GLES 2.0 را انتخاب کنید تا hardware acceleration (افزایش سرعت سخت افزار) فعال شود.
+              بررسی کنید که پیکربندی صحیح انجام شده، و در نهایت گزینه Finish را انتخاب کنید.
+              
+              برای مطالعه جزییات بیشتر , مدیریت دستگاه های مجازی را بخوانید.</p>
+
+      <h2>آنچه در قسمت بعد یاد می گیرید</h2>
+<pre class="line-numbers">
+  <code class="language-python">from time import sleep
+from selenium import webdriver
+from consts import *
+
+
+driver = webdriver.Chrome()
+driver.get(LOGIN_URL)</code>
+</pre>
+      <p>در قسمت بعدی یاد میگیریم که چطوری قیمه هارو بریزیم تو ماستا</p>
+      </div>
+    </div>
+    <div class="row text-center">
+      <div class="prev_section col-6">
+        <a id="prev" href="">قسمت قبلی</a>
+      </div>
+      <div class="col-6">
+        <a id="next" href="">قسمت بعدی</a>
+      </div>
+    </div>
+
+    <br/>
+    <br/>
+    <br/>
+  </div>
+  <div id="footer-section" class="container-fluid footer">
+    <div class="row">
+        <div class="col-3 copyright">
+            <h2>درباره ما</h2>
+            <p>جواد مختاری کوشیار سازنده اصلی این پروژه است، اما همواره افراد مختلفی در حال کار برای بهتر شدن فلاتری هستند. شما هم می توانید به ما بپیوندید.
+              <br />
+              <br />
+              تاریخ شروع پروژه: 1397/11/11
+              <br />
+              <br />
+              برای اطلاعات بیشتر به گیت هاب فلاتری مراجعه کنید
+            </p>
+            <a id="ghlink" href="">
+              <i class="fab fa-github"></i>
+            </a>
+        </div>
+      <div class="col-5 contact">
+          <h2>ارتباط با ما</h2>
+          <p>اگر نیاز به آموزشی دارید که در سایت دیده نمی شود می توانید به ما خبر بدید تا آن را در اولویت قرار دهیم. در حال حاضر راه های ارتباطی ما تلگرام و ایمیل هست.</p>
+          <p class="text-left">javadmokhtari [at] outlook [dot] com <i class="fas fa-envelope fas1"></i></p>
+          <a id="tglink" href="http://t.me/flutteryir"><p class="text-left">flutteryir @ <i class="fab fa-telegram fab1"></i></a></p>
+          <p>لطفا از عنوان مناسبی برای ایمیل استفاده کنید. تا حد امکان پیام را به زبان انگلیسی یا فارسی بنویسید و از فیلنگیش نوشتن پرهیز کنید.</p>
+      </div>
+      <div class="col-4 donate">
+          <h2>حمایت مالی</h2>
+          <p>استفاده از تمامی مطالب فلاتری کاملا رایگان است. زیرا هدف ما کسب درآمد از فلاتری نیست، اما در این دوره و زمانه هیچکس از پول بدش نمی آید :)</p>
+          <div id="zarinpal">
+            <script src="https://www.zarinpal.com/webservice/TrustCode" type="text/javascript"></script>
+          </div>
+          <p> کمک های مالی شما در یک حساب نگهداری می شود و در صورت نیاز مورد استفاده قرا می گیرد. کمک مالی باعث خوشحال شدن تیم فلاتری می شود و این خوشحالی قطعا می تواند بر کیفیت مطالب فلاتری تاثیر داشته باشد. <a href="https://zarinp.al/fluttery.ir" target="_blank">حمایت کنید!</a></p>
+      </div>
+  </div>
+  <div class="row" id="footer-note">
+    <p>هرگونه کپی برداری از مطالب فلاتری، تنها با ذکر منبع مجاز است. &copy; Javad Mokhtari Koushyar</p>
+  </div>
+  </div>
+  <script src="prism.js"></script>
+</body>
+</html>
