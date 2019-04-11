@@ -9,15 +9,15 @@
 # RoadMap
 You can track the project state and activity using [Milestones](https://github.com/javadmokhtari/fluttery.ir/milestones).
 
-`DONE`[Starter (Fluttery 1.0)](https://github.com/javadmokhtari/fluttery.ir/milestone/1):
+`DONE` [Starter (Fluttery 1.0)](https://github.com/javadmokhtari/fluttery.ir/milestone/1):
 - Research, Design and Test the website.
 - Adding Traffic Metrics Like Google Analysis
 - Apply Mobile Friendly Design
 
-`CURRENT`[Hedgehog (Fluttery 1.1)](https://github.com/javadmokhtari/fluttery.ir/milestone/2):
+`CURRENT` [Hedgehog (Fluttery 1.1)](https://github.com/javadmokhtari/fluttery.ir/milestone/2):
 - Complete Tutorials section.
 
-`CURRENT`[Migration (Fluttery 1.2)](https://github.com/javadmokhtari/fluttery.ir/milestone/3):
+`CURRENT` [Migration (Fluttery 1.2)](https://github.com/javadmokhtari/fluttery.ir/milestone/3):
 - Migrate Fluttery to a customized PHP Laravel system.
 
 # Help
