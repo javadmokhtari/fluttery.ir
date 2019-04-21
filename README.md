@@ -20,6 +20,9 @@ You can track the project state and activity using [Milestones](https://github.c
 `CURRENT` [Migration (Fluttery 1.2)](https://github.com/javadmokhtari/fluttery.ir/milestone/3):
 - Migrate Fluttery to a customized PHP Laravel system.
 
+`CURRENT` [Release1 (Fluttery 1.3)](https://github.com/javadmokhtari/fluttery.ir/milestone/4):
+- First publication of Fluttery.
+
 # Help
 We welcome any idea for improving Fluttery! If you found a bug in the project, you can simply create a [new issue](https://github.com/javadmokhtari/fluttery.ir/issues/new) or send a [PR](https://github.com/javadmokhtari/fluttery.ir/pulls).
 
