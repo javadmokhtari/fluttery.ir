@@ -17,7 +17,7 @@ You can track the project state and activity using [Milestones](https://github.c
 `CURRENT` [Hedgehog (Fluttery 1.1)](https://github.com/javadmokhtari/fluttery.ir/milestone/2):
 - Complete Tutorials section.
 
-`CURRENT` [Migration (Fluttery 1.2)](https://github.com/javadmokhtari/fluttery.ir/milestone/3):
+`DONE` [Migration (Fluttery 1.2)](https://github.com/javadmokhtari/fluttery.ir/milestone/3):
 - Migrate Fluttery to a customized PHP Laravel system.
 
 `CURRENT` [Release1 (Fluttery 1.3)](https://github.com/javadmokhtari/fluttery.ir/milestone/4):
