@@ -6,6 +6,9 @@
 
 [Fluttery](http://fluttery.ir) is a free and open-source project with aim of teaching [Google Flutter](https://github.com/flutter/flutter) to people. Fluttery is not a global project, because of language we speak. We only create [Farsi](https://en.wikipedia.org/wiki/Persian_language) Contents. So this project may not be useful for those who don't speak Farsi.
 
+# This Repository
+This repository only contains front-end project, Its not possible to share the Whole Project due to security warns.
+
 # RoadMap
 You can track the project state and activity using [Milestones](https://github.com/javadmokhtari/fluttery.ir/milestones).
 
